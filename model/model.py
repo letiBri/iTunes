@@ -14,7 +14,7 @@ class Model:
         self._grafo.clear()
         self._allNodi = DAO.getAlbums(durataMin)
         self._grafo.add_nodes_from(self._allNodi)
-        self._idMapAlbum = {n.AlbumId: n for n in self._allNodi}
+        self._idMapAlbum = {n.AlbumId: n for n in self._allNodi}  # equivale a fare il ciclo for
         self._allEdges = DAO.getAllEdges(self._idMapAlbum)
         self._grafo.add_edges_from(self._allEdges)
 
