@@ -22,3 +22,4 @@ class Model:
         return self._grafo.number_of_nodes(), self._grafo.number_of_edges()
 
     # manca ricorsione e finire punto 1
+
